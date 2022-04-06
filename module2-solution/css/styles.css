@@ -1,0 +1,71 @@
+/********** Base styles (Mobile View) **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 175%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  text-align: center;  
+}
+
+p {
+  height: 230px;
+  overflow: hidden;
+  border: 1px solid #000000;
+  background-color: #999999;  
+  padding: 30px 10px 10px 10px;
+  margin: 0px 10px 20px 10px;
+  font-size: 125%;
+  font-weight: 500;
+}
+
+.row {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-item {
+  position: relative;  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-name {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  right: 10px;
+  border: 1px solid black;
+  text-align: center;
+  font-family: Helvetica;
+  font-style: italic;
+  font-size: 140%;
+  font-weight: bold;
+}
+
+/********** Large devices (Desktop) **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices (Tablets) **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    float: left;
+    width: 50%;
+  }
+
+  .col-md-12 {
+    float: left;
+    width: 100%;
+  }
+}
