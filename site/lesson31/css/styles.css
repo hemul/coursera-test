@@ -7,8 +7,11 @@ body {
 
 #header-nav {
   background-color: #313A46;
-  border-radius: 0;
-  border: 0;
+}
+
+.navbar-header button.navbar-toggler {
+  clear: both;
+  margin-top: -30px;
 }
 
 #logo-img {
@@ -16,7 +19,7 @@ body {
   background-size: 150px;
   width: 150px;
   height: 150px;
-  margin: 10px 15px 10px 0;
+  margin: 10px 25px 10px 0;
 }
 
 .navbar-brand {
@@ -49,3 +52,99 @@ body {
 .navbar-brand p span {
   vertical-align: middle;
 }
+
+#nav-list {
+  margin-top:0px;
+  margin-left: 170px;
+}
+
+#nav-list a {
+  color: #7A8898;
+  text-align: center;  
+}
+
+#nav-list a:hover {
+  color: #648dbe;
+}
+
+#nav-list a span {
+  font-size: 1.5em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+
+#phone a {
+  text-align: right;
+  padding-bottom: 0;
+}
+
+#phone div {
+  color: #9aaabd;
+  text-align: right;
+  padding-right: 15px;
+}
+/* END HEADER*/
+
+/*************** MEDIA QUERIES *******************/
+
+/*********** Large devices only *********/
+@media (min-width: 1200px){
+  
+}
+
+/*********** Medium devices only *********/
+@media (min-width: 992px) and (max-width: 1199px){
+  #logo-img {
+    background: url('../images/employees-logo.png') no-repeat;
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+}
+
+/*********** Small devices only *********/
+@media (min-width: 768px) and (max-width: 991px){
+  #logo-img {
+    background: url('../images/employees-logo.png') no-repeat;
+    background-size: 75px;
+    width: 75px;
+    height: 75px;
+    margin: 3px 3px 3px 0;
+  }
+}
+
+/*********** Extra small devices only *********/
+@media (max-width: 767px){
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  .navbar-brand p {
+    font-size: .6em;
+    margin-top: 12px;
+  }
+
+  .navbar-brand p img {
+    height: 20px;
+  }
+
+  #collapsable-nav a {
+    font-size: 1.2em;
+  }
+
+  #collapsable-nav a span{
+    font-size: 1em;
+    margin-right: 5px;
+  }
+}
+
+/*************** END OF MEDIA QUERIES *******************/
